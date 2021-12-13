@@ -11,13 +11,13 @@
     $a = -5;
      
     if($a < 5){
-        echo("El numero es : " . strval($a) . "negativo" );
+        echo("El numero es : " . strval($a) . " negativo" );
     }
     if($a > 0){
         echo("El numero es : " . strval($a) . " positivo" );
     }
     if($a = 0){
-        echo("El numero es : " . strval($a) . "igual a cero" );
+        echo("El numero es : " . strval($a) . " igual a cero" );
 
 
     }

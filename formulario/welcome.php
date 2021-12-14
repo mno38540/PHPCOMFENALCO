@@ -11,9 +11,16 @@
 <body>
     <h1>Su registro se ha hecho satisfactoriamente </h1>
     <?php
+    if ($_POST){
+        $fname= $_POST["fname"];
+        $age= $_POST["age"];
+        include "conexion.php";
+        $sql = 'INSERT INTO paciente (idpaciente,fname , age) value(" ",$fname , $age)';
+        $result = mysqli_query($conectar , $sql) or die ('error en la base de datos valide los campos'. mysqli_error($conectar));
+        }
     if ($_POST["fname"] && $_POST["age"] != " " ){
         
-        $name = $_POST["fname"];
+    $name = $_POST["fname"];
     $age = $_POST["age"];
     echo  " Welcome " . $name . "  cibernauta   " ;
     echo "Your age is : ".  $age . " Years old" ;

@@ -5,5 +5,5 @@ $clave="";
 $bd ="clinica";
 
 
-$conectar = mysqli_connect ($servidor, $usuario , $clave, $bd)or die ( mysqli_error($conectar));
+$conectar = mysqli_connect ($servidor, $usuario , $clave, $bd);
 ?>

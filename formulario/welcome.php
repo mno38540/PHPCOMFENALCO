@@ -9,15 +9,9 @@
     <title>registro</title>
 </head>
 <body>
-    <h1>Su registro se ha hecho satisfactoriamente </h1>
+    <center><h1>Su registro se ha hecho satisfactoriamente </h1></center>
     <?php
-    if ($_POST){
-        $fname= $_POST["fname"];
-        $age= $_POST["age"];
-        include "conexion.php";
-        $sql = 'INSERT INTO paciente (idpaciente,fname , age) value(" ",$fname , $age)';
-        $result = mysqli_query($conectar , $sql) or die ('error en la base de datos valide los campos'. mysqli_error($conectar));
-        }
+    include "insercion.php";
     if ($_POST["fname"] && $_POST["age"] != " " ){
         
     $name = $_POST["fname"];
